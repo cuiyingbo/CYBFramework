@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Frist View Controller-->
+        <scene sceneID="ecF-9X-NVH">
+            <objects>
+                <viewController storyboardIdentifier="fristViewController" id="wmE-Dg-Mcb" customClass="FristViewController" customModule="CYBFramework" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NZ1-hN-Dif">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xwN-3t-qtr">
+                                <rect key="frame" x="97" y="318" width="180" height="30"/>
+                                <state key="normal" title="I want to look look Second"/>
+                                <connections>
+                                    <action selector="toSecond:" destination="wmE-Dg-Mcb" eventType="touchUpInside" id="ijb-xb-JYG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xwN-3t-qtr" firstAttribute="centerY" secondItem="NZ1-hN-Dif" secondAttribute="centerY" id="7cg-eQ-V3W"/>
+                            <constraint firstItem="xwN-3t-qtr" firstAttribute="centerX" secondItem="NZ1-hN-Dif" secondAttribute="centerX" id="jqW-de-Pan"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="yHW-Dc-RMf"/>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="xwN-3t-qtr" id="7BG-I3-E51"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r4g-HE-PTB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-362" y="-34"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="lMZ-Tk-deG">
+            <objects>
+                <viewController storyboardIdentifier="secondViewController" id="KVR-b4-feb" customClass="SecondViewController" customModule="CYBFramework" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sLV-W6-4sI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gcm-WK-LB8">
+                                <rect key="frame" x="164.5" y="318.5" width="46" height="30"/>
+                                <state key="normal" title="瞅啥瞅"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gcm-WK-LB8" firstAttribute="centerX" secondItem="sLV-W6-4sI" secondAttribute="centerX" id="QKE-hV-lEG"/>
+                            <constraint firstItem="gcm-WK-LB8" firstAttribute="centerY" secondItem="sLV-W6-4sI" secondAttribute="centerY" id="YHj-yr-el8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="LrI-oM-lVA"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lwH-8x-RLX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="425" y="-20"/>
+        </scene>
+    </scenes>
+</document>
